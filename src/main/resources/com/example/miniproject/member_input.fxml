@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="membersPane" prefHeight="511.0" prefWidth="615.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.miniproject.MembersInputController">
+    <children>
+        <Label layoutX="35.0" layoutY="79.0" text="Number of Members: " textFill="#d2f011">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+        <Spinner fx:id="memberCountSpinner" layoutX="233.0" layoutY="80.0" />
+        <Button layoutX="428.0" layoutY="76.0" onAction="#generateInputFields" style="-fx-background-color: #333333; -fx-text-fill: #FFFFFF; -fx-border-color: #AAAAAA;" text="Generate Input Fields">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <VBox fx:id="membersInputBox" layoutX="100.0" layoutY="160.0" spacing="10" />
+        <Button layoutX="43.0" layoutY="350.0" onAction="#submitMembers" style="-fx-background-color: #333333; -fx-text-fill: #FFFFFF; -fx-border-color: #AAAAAA;" text="Submit Members">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Label layoutX="214.0" layoutY="14.0" text="Add Members">
+            <font>
+                <Font size="30.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="#d2f011" offset="0.0" />
+                        <Stop color="#d2f011" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+    </children>
+</AnchorPane>
